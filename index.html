@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Road Signs BD — Learn Bangladesh Road Signs</title>
+<meta name="description" content="Offline bilingual EN/বাংলা learner and quiz for Bangladesh road signs: warning, prohibitory, mandatory and informative signs.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <h1>🚦 Road Signs BD</h1>
+    <p id="tagline"></p>
+    <button id="langBtn" class="lang" type="button">বাংলা</button>
+  </div>
+</header>
+<nav class="tabs wrap" aria-label="Sections">
+  <button id="tabLearn" class="tab active" type="button"></button>
+  <button id="tabQuiz" class="tab" type="button"></button>
+</nav>
+<main class="wrap">
+  <section id="learnView">
+    <section class="sod" aria-label="Sign of the day">
+      <div id="sodSign"></div>
+      <div>
+        <h2 id="sodTitle"></h2>
+        <h3 id="sodName"></h3>
+        <p id="sodCat" class="cat"></p>
+        <p id="sodMean"></p>
+      </div>
+    </section>
+    <input id="search" type="search" aria-label="Search signs">
+    <div class="chips" role="group" aria-label="Filter by category">
+      <button class="chip active" id="chip-all" data-cat="all" type="button"></button>
+      <button class="chip" id="chip-warning" data-cat="warning" type="button"></button>
+      <button class="chip" id="chip-prohibitory" data-cat="prohibitory" type="button"></button>
+      <button class="chip" id="chip-mandatory" data-cat="mandatory" type="button"></button>
+      <button class="chip" id="chip-informative" data-cat="informative" type="button"></button>
+    </div>
+    <p id="count" class="count"></p>
+    <div id="grid" class="grid"></div>
+  </section>
+  <section id="quizView" hidden>
+    <div id="quizPanel" class="quiz"></div>
+  </section>
+</main>
+<footer class="wrap"><p id="footerText"></p></footer>
+<script src="js/signs.js"></script>
+<script src="js/logic.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
